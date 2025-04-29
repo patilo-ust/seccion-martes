@@ -1,1 +1,0 @@
-en este repo deben ir los diagramas de clases entre otros
