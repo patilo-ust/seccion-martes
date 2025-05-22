@@ -1,0 +1,1 @@
+//Define el modelo de datos del sistema, ej: campos de un ticket

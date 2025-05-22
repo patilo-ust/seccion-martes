@@ -1,0 +1,1 @@
+//Scripts del cliente que manejan eventos y hacen llamadas a la API REST
