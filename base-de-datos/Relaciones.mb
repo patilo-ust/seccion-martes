@@ -1,0 +1,18 @@
+#Relaciones
+
+USER crea muchos TICKET.
+
+AGENT puede gestionar muchos TICKET.
+
+TICKET puede tener muchos COMMENTS.
+
+COMMENTS pertenece a un USER/AGENT.
+
+
+#Validaciones a nivel modelo
+
+Email único en User y Agent.
+
+agentId opcional (permite tickets no asignados).
+
+title y description obligatorios.

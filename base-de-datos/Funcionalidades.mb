@@ -1,0 +1,32 @@
+#Funciones reutilizables (Prisma)
+
+
+// services/ticketService.ts
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
+
+export const createTicket = async (userId: number, data: {
+  title: string;
+  description: string;
+  priority?: 'LOW' | 'MEDIUM' | 'HIGH' | 'URGENT';
+}) => {
+  return prisma.ticket.create({
+    data: {
+      ...data,
+      userId,
+    },
+  });
+};
+
+export const assignAgent = async (ticketId: number, agentId: number) => {
+  return prisma.ticket.update({
+    where: { id: ticketId },
+    data: { agentId, status: 'IN_PROGRESS' },
+  });
+};
+
+export const addComment = async (ticketId: number, authorId: number, message: string) => {
+  return prisma.comment.create({
+    data: { ticketId, authorId, message },
+  });
+};

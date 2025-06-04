@@ -1,0 +1,12 @@
+#Documentación en el esquema (schema.prisma)
+
+
+/// Representa un ticket de soporte creado por un usuario
+model Ticket {
+  ...
+}
+
+/// Comentarios realizados por agentes sobre los tickets
+model Comment {
+  ...
+}
