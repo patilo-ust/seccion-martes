@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | TicketST</title>
+    <link rel="stylesheet" href="css/logindash.css">
+</head>
+<body>
+    <div class="browser-bar">
+    </div>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="assets/logo.png" alt="Logo" class="sidebar-logo">
+                <span class="company-name"></span>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="profile">
+                    <span class="icon profile-icon"></span>
+                    <span>Profile</span>
+                </li>
+                <li class="active">
+                    <span class="icon dashboard-icon"></span>
+                    <span>Dashboard</span>
+                </li>
+                <li>
+                    <span class="icon users-icon"></span>
+                    <span>Usuarios</span>
+                </li>
+                <li class="tickets">
+                    <span class="icon tickets-icon"></span>
+                    <span>Tickets</span>
+                    <ul class="submenu">
+                        <li>&gt; Abierto</li>
+                        <li>&gt; Proceso</li>
+                        <li>&gt; Cerrado</li>
+                        <li>&gt; Derivado</li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="icon systems-icon"></span>
+                    <span>Explotación de Sistemas</span>
+                </li>
+                <li>
+                    <span class="icon control-icon"></span>
+                    <span>Control</span>
+                </li>
+                <li>
+                    <span class="icon help-icon"></span>
+                    <span>Help</span>
+                </li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <header class="main-header">
+                <h2>Dashboard</h2>
+                <span class="icon bell-icon"></span>
+            </header>
+            <section class="stats-cards">
+                <div class="stat-card">
+                    <div class="stat-title">12,869,323 <span class="icon ticket-icon"></span></div>
+                    <div class="stat-label">Total Tickets</div>
+                    <div class="stat-footer"><span class="icon chart-icon"></span> 8% Up since last week</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-title">12,869,323 <span class="icon ticket-icon"></span></div>
+                    <div class="stat-label">T. Abiertos</div>
+                    <div class="stat-footer"><span class="icon chart-icon"></span> 8% Up since last week</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-title">12,869,323 <span class="icon ticket-icon"></span></div>
+                    <div class="stat-label">T. Proceso</div>
+                    <div class="stat-footer"><span class="icon chart-icon"></span> 8% Up since last week</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-title">12,869,323 <span class="icon ticket-icon"></span></div>
+                    <div class="stat-label">T. Cerrados</div>
+                    <div class="stat-footer"><span class="icon chart-icon"></span> 8% Up since last week</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-title">12,869,323 <span class="icon ticket-icon"></span></div>
+                    <div class="stat-label">T. Derivados</div>
+                    <div class="stat-footer"><span class="icon chart-icon"></span> 8% Up since last week</div>
+                </div>
+            </section>
+            <section class="main-panel">
+                <!-- Aquí puedes agregar más contenido del dashboard -->
+            </section>
+        </main>
+    </div>
+    <script src="js/dashboardjs.js"></script>
+</body>
+</html>
