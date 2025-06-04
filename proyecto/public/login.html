@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>TicketST</title>
+</head>
+<body>
+    <header class="header">
+        <img src="assets/logo.png" alt="Logo TicketST" class="logo">
+        <nav class="nav-links">
+            <a href="#">Home</a> |
+            <a href="#">Login</a> |
+            <a href="#">Blog</a>
+        </nav>
+    </header>
+    <main>
+        <div class="functional-container">
+            <h1 class="login-title">Login</h1>
+            <form onsubmit="return validatePassword()">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" placeholder="Introduce tu correo" required>
+                </div>
+                <div class="form-group password-group">
+                    <label for="password">Password:</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" placeholder="Introduce tu contraseña" required>
+                        <button type="button" id="toggle-password" class="toggle-password-btn">Mostrar</button>
+                    </div>
+                </div>
+                <div class="remember-forgot">
+                    <label class="remember-label"><input type="checkbox"> Remember Me</label>
+                    <a href="#" class="forgot-password" onclick="alert('Mantenimiento, vuelva más tarde...')">Forgot password?</a>
+                </div>
+                <div class="btn-container">
+                    <button class="btn" type="submit">Login</button>
+                </div>
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+                <div class="social-login">
+                    <button type="button" class="social-btn facebook"><span class="icon">f</span> Facebook</button>
+                    <button type="button" class="social-btn google"><span class="icon">G</span> Google</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="js/login.js"></script>
+</body>
+</html>
